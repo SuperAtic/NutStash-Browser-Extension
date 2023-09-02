@@ -17,27 +17,15 @@
       "js": ["content.js"]
     }
   ],
+  "background": {
+      "service_worker": "background.js"
+    },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/icon16.png",
       "48": "images/icon48.png",
       "128": "images/icon128.png"
-    }
-  },
-  "browser_action": {
-    "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
-    },
-    "default_popup": "popup.html",
-    "badge": {
-      "color": [0, 128, 0, 255], // Green color
-      "text": ""
-    },
-    "background": {
-      "service_worker": "background.js"
     }
   }
 }
