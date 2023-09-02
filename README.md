@@ -1,4 +1,4 @@
-# Nutstash Wallet - Browser Embedder
+# Nutstash Wallet - Browser Extension
 
 ![Extension Icon](images/icon48.png)
 
