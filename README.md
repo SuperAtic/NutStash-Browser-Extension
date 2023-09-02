@@ -19,6 +19,7 @@ The Nutstash Wallet Embedder is a Chrome/Brave (and any other chromium-based) br
 3. Go to `chrome://extensions/`.
 4. Enable "Developer mode" in the top-right corner.
 5. Click on "Load unpacked" and select the directory where you cloned/downloaded this repository.
+6. When extension is active and pinned, right click to access the Options page and select your preferred app version (Beta/Prod)
 
 ## Usage
 
