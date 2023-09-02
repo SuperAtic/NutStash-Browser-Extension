@@ -4,7 +4,7 @@
 
 ## Description
 
-The Nutstash Wallet Embedder is a Chrome/Brave (and any other chromium-based) browser extension that allows users to embed the Nutstash wallet app into their browser for easy access to their financial information.
+The Nutstash Wallet Extension is a Chrome/Brave (and any other chromium-based) browser extension that allows users to embed the Nutstash wallet app into their browser for easy access to their financial information.
 
 ## Features
 
