@@ -1,10 +1,14 @@
 // popup.js
-document.getElementById('openWalletButton').addEventListener('click', () => {
-  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    const tab = tabs[0];
-    const url = 'https://wallet.nutstash.app';
+const walletIframe = document.getElementById('walletIframe');
 
-    // Open the web app in a new window.
-    chrome.windows.create({ url });
-  });
+// Load the appropriate URL based on the app version setting.
+chrome.storage.sync.get(['appVersion'], function (result) {
+  const appVersion = result.appVersion || 'production'; // Default to production if setting not found.
+  let walletUrl = 'https://wallet.nutstash.app';
+
+  if (appVersion === 'beta') {
+    walletUrl = 'https://alpha.nutstash.app';
+  }
+
+  walletIframe.src = walletUrl;
 });
