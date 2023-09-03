@@ -1,38 +1,37 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Nutstash Wallet Embedder",
   "version": "1.1",
   "description": "Embed wallet.nutstash.app in your browser.",
-  "permissions": ["activeTab", "storage"],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "48": "images/icon48.png"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "48": "images/icon48.png"
-    }
-  },
-  "options_page": "settings.html", // Add this line
   "browser_action": {
     "default_icon": {
       "48": "images/icon48.png"
     },
-    "default_popup": "popup.html",
-    "badge": {
-      "color": [0, 128, 0, 255], // Green color
-      "text": ""
-    },
-    "background": {
-      "service_worker": "background.js"
-    }
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "settings.html",
+    "chrome_style": false
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   }
 }
