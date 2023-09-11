@@ -22,7 +22,7 @@
     }
   },
   "options_page": "settings.html", // Add this line
-  "browser_action": {
+  "action": {
     "default_icon": {
       "48": "images/icon48.png"
     },
