@@ -1,6 +1,6 @@
 # Nutstash Wallet - Browser Extension
 
-![Extension Icon](images/icon48.png)
+![Extension Icon](https://github.com/SuperAtic/NutStash-Browser-Extension/blob/main/images/icon48.png)
 
 ## Description
 
