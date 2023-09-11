@@ -12,7 +12,7 @@ window.addEventListener("click", (event) => {
 // You can add more logic here if needed.
 
 // Check if the current page supports ecash payments by looking for the "ecash-payment" meta tag.
-const supportsEcashPayments = document.querySelector('meta[name="ecash-payment"][content="true"]') !== null;
+const supportsEcashPayments = document.querySelector('meta[name="cashu-payment"][content="true"]') !== null;
 
 // Send a message to the background script with the result.
 chrome.runtime.sendMessage({ supportsEcashPayments }, (response) => {
