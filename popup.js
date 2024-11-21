@@ -10,5 +10,9 @@ chrome.storage.sync.get(['appVersion'], function (result) {
     walletUrl = 'https://alpha.nutstash.app';
   }
 
+ if (appVersion === 'v2') {
+    walletUrl = 'https://v2.nutstash.app';
+  }
+
   walletIframe.src = walletUrl;
 });
